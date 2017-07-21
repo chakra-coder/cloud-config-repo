@@ -4,7 +4,7 @@ management:
   security:
     enabled: false
 admin:
-  user: hello123456
+  user: hello12345
 eureka:
   client:
     serviceUrl:
