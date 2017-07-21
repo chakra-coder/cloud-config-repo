@@ -1,0 +1,50 @@
+logging:
+  level:
+    com:
+      patterncat: DEBUG
+
+event:
+  logging:
+    printRespBody: false
+review:
+  test:
+    pwd: '{cipher}3078cb1c5ed223abc8d492b04625b29f069e481e6c6e39e7fbb65e2b19f920df'
+
+#zabbix:
+#  prefix: review-app
+#  host: 192.168.99.100
+#  port: 10051
+#  user: Admin
+#  password: zabbix
+#  apiUrl: http://192.168.99.100/api_jsonrpc.php
+#  groupName: metrics-group
+#  intervalInMillis: 5000
+
+spring:
+  metrics:
+    export:
+      enabled: true
+      send-latest: true
+      delay-millis: 1000
+      statsd:
+        host: 192.168.99.100
+        port: 8125
+        prefix: review-hystrix
+#statsd:
+#  prefix: review-app
+#  host: 192.168.99.100
+#  port: 8125
+  data:
+    mongodb:
+      host: 192.168.99.100
+      port: 27017
+      database: docker-demo-java-mongo
+      repositories:
+        enabled: true
+netflix:
+  atlas:
+    uri: http://192.168.99.100:7101/api/v1/publish/
+
+msg:
+   template1:  hello,{0}公司,于{1}月{2}日
+

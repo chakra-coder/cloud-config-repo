@@ -1,0 +1,4 @@
+canary:
+  enabled: false
+  ratio: 100
+  users: hello1,hello2,hello3
