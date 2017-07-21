@@ -2,7 +2,7 @@ server:
   port: 9002
 
 admin:
-  user: hello123456789
+  user: hello1234567890
 eureka:
   client:
     serviceUrl:
