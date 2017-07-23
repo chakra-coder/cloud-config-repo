@@ -16,4 +16,7 @@ zuul:
   routes:
     product:
       path: /baidu/**
-      url: http://baidu.com 
+      url: http://baidu.com
+    demo1:
+      path: /demo/**
+      url: http://www.163.com       
