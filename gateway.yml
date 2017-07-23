@@ -1,4 +1,19 @@
+management:
+  security:
+    enabled: false
 canary:
   enabled: false
   ratio: 100
   users: hello1,hello2,hello3
+zuul:
+  max:
+    host:
+      connections: 500
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
+#  ignored-services: "*"
+  routes:
+    product:
+      path: /baidu/**
+      url: http://baidu.com 
