@@ -33,5 +33,9 @@ spring:
   datasource:
     platform: postgres
     url: jdbc:postgresql://192.168.99.100:5432/postgres
+    driverClassName: org.postgresql.Driver
     username: postgres
     password: 1q2w3e
+    validation-query: SELECT 1
+    test-while-idle: true
+    test-on-borrow: true
