@@ -3,7 +3,7 @@ management:
     enabled: false
 canary:
   enabled: false
-  ratio: 100
+  ratio: 0
   users: hello1,hello2,hello3
 zuul:
   max:
