@@ -1,1 +1,37 @@
-logging.level.com.patterncat: DEBUG
+server:
+  port: 9001
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+ribbon:
+  eureka:
+    enabled: true
+
+spring:
+  data:
+    mongodb:
+      host: 192.168.99.100
+      port: 27017
+      database: docker-demo-java-mongo
+      repositories:
+        enabled: true
+
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate.ddl-auto: update
+
+  database:
+    driverClassName: org.postgresql.Driver
+
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://192.168.99.100:5432/postgres
+    username: postgres
+    password: 1q2w3e
