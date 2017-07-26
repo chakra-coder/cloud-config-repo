@@ -5,6 +5,8 @@ management:
     enabled: false
 admin:
   user: hello1
+biz:
+  adminUser: hello  
 eureka:
   client:
     serviceUrl:
