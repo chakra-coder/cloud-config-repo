@@ -6,7 +6,7 @@ management:
 admin:
   user: hello1
 biz:
-  adminUser: helloworld 
+  adminUser: helloworld2 
 eureka:
   client:
     serviceUrl:
