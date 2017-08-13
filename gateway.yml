@@ -1,3 +1,6 @@
+auth:
+  ignorePath:
+    list: /info
 management:
   security:
     enabled: false
